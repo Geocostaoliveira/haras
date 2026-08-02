@@ -102,7 +102,7 @@
         <div class="search-box">
             <h2>Buscar Cavalo no Plantel</h2>
             
-            <form action="processa.php" method="GET">
+            <form action="processaGET.php" method="GET">
                 <div class="form-group">
                     <label for="busca">Nome ou Raça do Animal:</label>
                     <input type="text" id="busca" name="txt_busca" placeholder="Ex: Quarto de Milha...">
@@ -114,7 +114,7 @@
 
         <h2>Simulador de Financiamento Equino</h2>
         
-        <form action="processa.php" method="POST">
+        <form action="processaPOST.php" method="POST">
             
             <div class="form-group">
                 <label for="nome">Nome do Proponente:</label>
