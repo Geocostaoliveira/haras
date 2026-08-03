@@ -1,5 +1,6 @@
 <?php 
     require_once 'conexaoDB.php';
+    require_once 'funcs.php';
     $cavalo = $_GET['txt_busca'] ?? ''; //pega o valor cavalo via get
     if (!empty($cavalo))
     {
@@ -13,11 +14,7 @@
         //condicional para a existencia do cavalo no banco de dados, caso nao exista, retorna a mensagem de erro
         if (!$busca)
         {
-            /*eu ia colocar a variavel result como "Nao encontrada, 
-            mas eu so vou usar isso na pagina de erro,
-            entao nao precisa, ia dar mais trbalho e deixar o codigo mais feio"*/
-            header("Location: erro.php");
-            exit;
+            erro("busca");
         }
         else
         {
@@ -25,7 +22,8 @@
         }
     }
     else {
-        require_once 'index.php'; //se a string estiver vazia, redireciona para a pagina inicial
+        header("Location: index.php");
+        exit;
     }
 
     //informacoes do cavalo
@@ -45,7 +43,7 @@
     
     <h1> <?php echo($result) ;?> </h1>
     <p>Informações: <?php echo($info) ;?> </p>
-    <p>Preço: R$ <?php echo($preco) ;?> </p>
+    <p>Preço: R$ <?php echo(number_format($preco, 2, ',', '.')) ;?> </p>
     <a href="index.php">Voltar</a>
 </body>
 </html>
