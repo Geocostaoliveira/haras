@@ -1,18 +1,17 @@
 # HARAS PRIME
 
-## O haras prime eh um projeto de desenvolvimento web proposto pelo professor Regilan Meira. <br> A ideia principal eh de simular um haras virtual, onde se compra cavalos de diversas racas e possui a opcao de financiamento dos equinos. <br> O projeto conta com paginas de erros (para desenvolvimento da logica atraves do uso dos recursos do PHP).
+## O haras prime é um projeto de desenvolvimento web proposto pelo professor Regilan Meira. <br> A ideia principal é de simular um haras virtual, onde se compra cavalos de diversas raças e possui a opcao de financiamento dos equinos. <br> O projeto conta com páginas de erros (para desenvolvimento da lágica através do uso dos recursos do PHP).
 
 ### Requisitos mínimos e instalações anteriores.
 1. Xampp instalado
-2. Mysql (opcional)
+2. Mysql (recomendado, para nao depender do xampp)
 3. PHP instalado
-4. Composer (dependencias do PHP) 
-instalado
+4. Composer (dependencias do PHP) instalado
 
 <br>
 
 ### Instalação
-O processo de instalação dentro do linux e do windows não tem uma diferença tão grande, se não algumas pastas para a instalação.
+O processo de instalação dentro dos sistemas Linux e do Windows não tem uma diferença tão grande, se não algumas pastas para a instalação.
 <br>
 <br>
 
@@ -35,8 +34,9 @@ Dentro do terminal (com o xampp e o composer baixado)
 >ren .env.example .env <br>
 >composer install
 
+> [!WARNING]
+> Após o processo, apague os comentários do seu `.env`
 
-Após o processo, apague os comentários do seu `.env`
 <br>
 
 ### Linux
@@ -59,8 +59,9 @@ Com o mariaDB, ou o mysql dentro do seu terminal:
 
 
 ####
-
-Caso o usuário utilize o mariadb, troque o `mysql -u root -p` por `mariadb -u root -p`. 
+> [!WARNING]
+>Caso o usuário utilize o mariadb, troque o `mysql -u root -p` por `mariadb -u root -p`. 
+<br>
 
 ### `BASH LINUX`
 >mysql -u root -p <br>
@@ -74,7 +75,7 @@ Caso o usuário utilize o mariadb, troque o `mysql -u root -p` por `mariadb -u r
 
 Nesse caso, é simples. <br> 
 Seu php ou composer provavelmente não está com a instalação correta. <br><br>
-Para corrigir, é só entrar na pasta da instalação do seu php e editar o arquivo php.ini <br> Dentro do arquivo, procure pela linha: `;extension=zip` e, em seguida, apague o "`;`", descomentando a linha `extension=zip`. <br> Com a linha descomentada, o seu composer consegue continuar normalmente a instalação.
+Para corrigir, é só entrar na pasta da instalação do seu php e editar o arquivo `php.ini`. <br> Dentro do arquivo, procure pela linha: `;extension=zip` e, em seguida, apague o "`;`", descomentando a linha `extension=zip`. <br> Com a linha descomentada, o seu composer consegue continuar normalmente a instalação.
 <br><br>
 
 #
@@ -86,4 +87,4 @@ Nesse caso, há de haver o estudo do caso. Mas provavelmente é somente uma ques
 #
 
 ## Erro na conexão: SQLSTATE[HY000] [2002] No such file or directory
-Mude o nome do seu localhost na .env para o seu ip. Muito provavelmente mudar para 127.0.0.1 vai resolver.
+Mude o nome do seu localhost na .env para o seu ip. Muito provavelmente mudar para 127.0.0.1 irá resolver.
