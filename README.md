@@ -35,9 +35,9 @@ Dentro do terminal (com o xampp e o composer baixado)
 >ren .env.example .env <br>
 >composer install
 
-<br><br>
 
-Após o processo, apague os comentário do seu .env
+Após o processo, apague os comentários do seu `.env`
+<br>
 
 ### Linux
 Dentro do terminal, com o composer e o xampp baixado. O tutorial se estende para o arch linux, mas pode ser traduzido para outras distribuições. <br>
@@ -70,11 +70,11 @@ Caso o usuário utilize o mariadb, troque o `mysql -u root -p` por `mariadb -u r
 
 ## Possíveis erros
 
-## Composer não consegue fazer a instalação das dependências, por conta do pacote zip.
+## Composer não consegue fazer a instalação das dependências, por conta do pacote .zip
 
 Nesse caso, é simples. <br> 
 Seu php ou composer provavelmente não está com a instalação correta. <br><br>
-Para corrigir, é só entrar na pasta da instalação do seu php e editar o arquivo php.ini <br> Dentro do arquivo, procure pela linha: `;extension=zip` e vai tirar o `;`, descomentando a linha `extension=zip`.
+Para corrigir, é só entrar na pasta da instalação do seu php e editar o arquivo php.ini <br> Dentro do arquivo, procure pela linha: `;extension=zip` e, em seguida, apague o "`;`", descomentando a linha `extension=zip`. <br> Com a linha descomentada, o seu composer consegue continuar normalmente a instalação.
 <br><br>
 
 #

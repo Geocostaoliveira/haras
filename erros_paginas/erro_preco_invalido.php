@@ -97,7 +97,7 @@
         </div>
 
         <div class="actions">
-            <a href="index.php">← Voltar à Página Principal</a>
+            <a href="../index.php">← Voltar à Página Principal</a>
         </div>
     </div>
 </body>
